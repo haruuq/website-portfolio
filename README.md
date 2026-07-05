@@ -1,2 +1,2 @@
 # website-portfolio
-My personal portfolio / resume.
+Still in a work in progress!
