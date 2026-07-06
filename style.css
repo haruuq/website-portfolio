@@ -190,11 +190,10 @@ body {
     color: #013270;
 }
 
-/* --- POPUP WINDOW STYLES --- */
 .popup-window {
     position: fixed;     
-    width: 1000px;       /* CHANGED: Matches your menu-card width */
-    height: 600px;       /* CHANGED: Matches your menu-card height */
+    width: 1000px;       
+    height: 600px;      
     background: #f2f2f2; 
     border-radius: 25px; 
     box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
@@ -205,13 +204,13 @@ body {
     z-index: 9999;       
 }
 
-/* Custom layout fixes for inside the popup header */
+/* menu-popup */
 .popup-drag-handle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
-    cursor: move; /* Indicates it can be grabbed and dragged */
+    cursor: move; 
 }
 
 .popup-title {
@@ -236,11 +235,10 @@ body {
     color: white;
 }
 
-/* Scrollable window container body */
 .popup-body {
     flex: 1;
     padding: 25px;
-    overflow-y: auto; /* Content scrolls smoothly if it overflows */
+    overflow-y: auto; /
     font-family: "Nunito", sans-serif;
     color: #013270;
 }
