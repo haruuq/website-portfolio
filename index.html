@@ -8,7 +8,7 @@
     <link rel="icon" href="images/favicon.ico.png" type="image/x-icon" sizes="32x32">
 </head>
 <body>
-
+<!--hero header-->
 <section class="hero">
     <div class="hero-text">
         <p class="subtitle">Illustration by me!</p>
@@ -38,6 +38,7 @@
     <div class="blue-separator"></div>
 </section>
 
+<!--menu card template-->
 <section class="menu">
     <div class="menu-card">
         <div class="menu-card-header"></div> 
@@ -48,37 +49,69 @@
                 <p>about</p>
             </div>
 
-            <div class="menu-choices" style="cursor: pointer;">
+            <div class="menu-choices" id="work-btn" style="cursor: pointer;">
                 <img src="images/work.png" alt="Work Logo">
                 <p>work</p>
             </div>
 
-            <div class="menu-choices" style="cursor: pointer;">
+            <div class="menu-choices" id="cert-btn" style="cursor: pointer;">
                 <img src="images/cert.png" alt="Certification Logo">
                 <p>certifications</p>
             </div>
         </div>
 
         <div class="blue-separator-2">
-            <p>© 2026 Jessyca Cruz</p>
+            <p>© 2026 Jessyca Cruz</p>          
         </div>
     </div>
 </section>
 
+<!--menu button pop-up window-->
+
 <div id="about-popup" class="popup-window" style="display: none;">
     <div class="menu-card-header popup-drag-handle">
         <span class="popup-title">about</span>
-            <button class="popup-close-btn">[x]</button>
+        <button class="popup-close-btn">[x]</button>
     </div>
-            
+
     <div class="popup-body">
-        <p>test test test</p>
+        <div class="profile-header">
+            <img id="portpic" src="images/1770118929933.jpg" alt="Picture of me!">
+            <div class="about-text-container">
+                <h1>Jessyca Cruz</h1>
+                <p>I'm a third-year <span class="highlight-blue">Information Technology</span> student 
+                    with an interest in <span class="highlight-blue">web development</span> and 
+                    <span class="highlight-blue">UI/UX design</span>. I enjoy turning ideas into 
+                    interactive websites while continuously improving my programming skills!
+                </p>
+            </div>
+        </div> 
+        <hr class="popup-divider">
+    </div> 
+</div> 
+
+<div id="work-popup" class="popup-window" style="display: none;">
+    <div class="menu-card-header popup-drag-handle">
+        <span class="popup-title">work</span>
+        <button class="popup-close-btn">[x]</button>
+    </div>
+    <div class="popup-body">
+        <p>TBA</p>
+    </div>
+</div>
+
+<div id="cert-popup" class="popup-window" style="display: none;">
+    <div class="menu-card-header popup-drag-handle">
+        <span class="popup-title">certifications</span>
+        <button class="popup-close-btn">[x]</button>
+    </div>
+    <div class="popup-body">
+        <p>TBA</p>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
-
 <script src="script.js"></script>
 
 </body>

@@ -47,7 +47,7 @@ body {
 
 .subtitle {
     font-family: "Nunito", sans-serif;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
     color: rgba(255,255,255,.75);
     margin-bottom: 1rem;
 }
@@ -70,7 +70,7 @@ body {
 
 .roles {
     font-family: "Nunito", sans-serif;
-    font-size: 1.875rem; /* 30px */
+    font-size: 1.875rem;
     color: white;
     margin-bottom: 1.5rem;
 }
@@ -149,7 +149,6 @@ body {
     width: 100%;
     height: 60px;
     flex-shrink: 0;
-
     background: #5989D4;
 }
 
@@ -159,7 +158,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .menu-choices {
@@ -183,7 +181,7 @@ body {
 }
 
 .menu-choices p {
-    margin: 0;                        
+    margin: 0;                                                 
     font-family: "Fredoka", sans-serif;
     font-size: 35px;
     font-weight: 600;
@@ -192,25 +190,28 @@ body {
 
 .popup-window {
     position: fixed;     
+    top: 50%;                    
+    left: 50%;                    
+    transform: translate(-50%, -50%); 
+    
+    display: none;                
     width: 1000px;       
-    height: 600px;      
+    height: 600px;       
     background: #f2f2f2; 
     border-radius: 25px; 
     box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
     overflow: hidden;
-    display: flex;
     flex-direction: column;
     touch-action: none;  
     z-index: 9999;       
+    cursor: move;        
 }
 
-/* menu-popup */
 .popup-drag-handle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px;
-    cursor: move; 
 }
 
 .popup-title {
@@ -236,9 +237,49 @@ body {
 }
 
 .popup-body {
-    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    gap: 25px; 
     padding: 25px;
-    overflow-y: auto; /
+    overflow-y: auto; 
     font-family: "Nunito", sans-serif;
     color: #013270;
+    cursor: auto; 
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px; 
+}
+
+.popup-divider {
+    border: none;
+    border-top: 2px solid #b0b0b0; 
+    width: 100%;
+}
+
+#portpic {
+    width: 200px;     
+    height: auto;         
+    border-radius: 50%;   
+    object-fit: cover;    
+    display: inline-block; 
+}
+
+.about-text-container {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.about-text-container h1 {
+    font-family: "Fredoka", sans-serif;
+}
+
+.highlight-blue {
+    font-weight: 1000;      
+    color: #0057C4;        
 }
