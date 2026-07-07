@@ -13,7 +13,7 @@ const closeButtons = document.querySelectorAll('.popup-close-btn');
 
 let highestZ = 9999;
 
-function setupPopup(buttonId, popupId) {
+function setupPopup(buttonId, popupId, width, height) { 
   const btn = document.getElementById(buttonId);
   const popup = document.getElementById(popupId);
   
@@ -21,6 +21,11 @@ function setupPopup(buttonId, popupId) {
     console.warn(`Initialization skipped: Check if #${buttonId} or #${popupId} exists in your HTML.`);
     return;
   }
+
+  // Apply styles safely
+  if (width) popup.style.width = width;
+  if (height) popup.style.height = height;
+
 
   const closeBtn = popup.querySelector('.popup-close-btn');
 
@@ -50,10 +55,10 @@ function setupPopup(buttonId, popupId) {
   });
 }
 
-// map buttons to respective popups safely
-setupPopup('about-btn', 'about-popup');
-setupPopup('work-btn', 'work-popup');
-setupPopup('cert-btn', 'cert-popup');
+// map buttons to respective popups safely, also sizes to control their dimensions individually
+setupPopup('about-btn', 'about-popup', '700px', '500px'); 
+setupPopup('work-btn', 'work-popup', '800px', '600px');  
+setupPopup('cert-btn', 'cert-popup', '400px', '300px');
 
 menuButtons.forEach(button => {
   button.addEventListener('click', () => menuClickSound.play());

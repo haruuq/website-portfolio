@@ -194,17 +194,34 @@ body {
     left: 50%;                    
     transform: translate(-50%, -50%); 
     
-    display: none;                
-    width: 1000px;       
-    height: 600px;       
     background: #f2f2f2; 
     border-radius: 25px; 
     box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
-    overflow: hidden;
-    flex-direction: column;
+    overflow: hidden; /* cleans the rounded corners */
+    
+    display: none; /* let JavaScript handle turning this to flex on click */
+    flex-direction: column; /* stacks header above the body layout */
     touch-action: none;  
     z-index: 9999;       
     cursor: move;        
+}
+
+.popup-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 4px;
+}
+ 
+.popup-body::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+
+.popup-body::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 .popup-drag-handle {
@@ -237,11 +254,14 @@ body {
 }
 
 .popup-body {
+    flex: 1;           
+    overflow-y: auto;  
+    overflow-x: hidden; 
+    
     display: flex;
     flex-direction: column; 
     gap: 25px; 
     padding: 25px;
-    overflow-y: auto; 
     font-family: "Nunito", sans-serif;
     color: #013270;
     cursor: auto; 
@@ -282,4 +302,38 @@ body {
 .highlight-blue {
     font-weight: 1000;      
     color: #0057C4;        
+}
+
+.education-text-container h1 {
+    font-family: "Fredoka", sans-serif;
+    margin-bottom: 15px; /* controls where the strand name goes (up or down) */
+}
+
+.education-text-container h2 {
+    font-family: "Fredoka", sans-serif;
+}
+
+.education-text-container p {
+    margin-top: 0;
+    padding-top: 0;
+}
+/*makes it so that the school name and the year behaves like inline elements.*/
+.education-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 20px;                    
+}
+
+.education-row h2,
+.education-row .education-year {
+    margin: 0;
+    padding: 0;
+    font-weight: 1000;
+}
+
+.education-row .education-year {
+    color: #888888;
 }
