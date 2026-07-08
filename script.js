@@ -57,7 +57,7 @@ function setupPopup(buttonId, popupId, width, height) {
 
 // map buttons to respective popups safely, also sizes to control their dimensions individually
 setupPopup('about-btn', 'about-popup', '700px', '500px'); 
-setupPopup('work-btn', 'work-popup', '800px', '600px');  
+setupPopup('work-btn', 'work-popup', '1000px', '600px');  
 setupPopup('cert-btn', 'cert-popup', '400px', '300px');
 
 menuButtons.forEach(button => {

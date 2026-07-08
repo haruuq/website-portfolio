@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-color: #2f2f2f;
+    background-color: #72B4FF;
     overflow-x: hidden;
 }
 
@@ -309,6 +309,8 @@ body {
     font-family: "Fredoka", sans-serif;
     margin-bottom: 15px; /* controls where the strand name goes (up or down) */
     font-size: 35px;
+
+    /*bar accent*/
     border-left: 5px solid #0057C4; 
     padding-left: 20px;
 }
@@ -348,6 +350,8 @@ body {
     font-family: "Fredoka", sans-serif;
     margin-bottom: 15px; /* controls where the strand name goes (up or down) */
     font-size: 35px;
+    
+    /*bar accent*/
     border-left: 5px solid #0057C4; 
     padding-left: 20px;
 }
@@ -375,5 +379,72 @@ body {
 
 .highlight-gray {
     font-weight: 1000;      
-    color: #888888;;        
+    color: #888888;        
+}
+
+#current-pos {
+    font-weight: 600;
+    color: #0057C4;
+}
+
+/* Container that splits Tools and Development side-by-side */
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Individual Columns */
+.skills-column {
+    flex: 1; /* Makes both columns take up equal horizontal space */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills-column h2 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 42px;
+    color: #013270;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+
+/* The layout container handling the pill wrapping */
+.tags-grid {
+    display: flex;
+    flex-wrap: wrap; /* This lets tags drop to the next line smoothly */
+    gap: 10px;       /* Spacing between individual pill tags */
+}
+
+/* The Blue Pill Design */
+.skill-tag {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #0057C4; 
+    padding: 8px 16px;
+    border-radius: 8px;        
+    border: 2px solid #9D9FFF; 
+    display: inline-block;
+}
+
+.coding-projects {
+    font-family: "Fredoka", sans-serif;
+    font-size: 28px;
+    color: #013270;
+    font-weight: 1000;
+    letter-spacing: 1px;
+}
+
+.coding-projects img {
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: -20px;
+    transition: transform .2s ease;
 }
