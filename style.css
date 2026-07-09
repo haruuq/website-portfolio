@@ -1,209 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;600&display=swap");
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
 }
 
 body {
-    background-color: #72B4FF;
-    overflow-x: hidden;
+  background-color: #72b4ff;
+  overflow-x: hidden;
 }
 
 .hero {
-    position: relative;
-    background-color: #72B4FF;
+  position: relative;
+  background-color: #72b4ff;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 
-    padding: 4vh 6vw 2vh;
+  padding: 4vh 6vw 2vh;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .blue-separator {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: clamp(30px, 6vh, 50px);
-    background-color: #013678;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: clamp(30px, 6vh, 50px);
+  background-color: #013678;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: clamp(40px, 8vh, 80px);
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(40px, 8vh, 80px);
+  z-index: 1;
 }
 
 .subtitle {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.125rem;
-    color: rgba(255,255,255,.75);
-    margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1rem;
 }
 
 .hero-text h2,
 .hero-text h1 {
-    font-family: "Fredoka", sans-serif;
-    font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
 
-    font-size: clamp(48px, 10vw, 170px);
+  font-size: clamp(48px, 10vw, 170px);
 
-    color: white;
-    line-height: .9;
-    text-shadow: 0 15px 10px rgba(0,0,0,.18);
+  color: white;
+  line-height: 0.9;
+  text-shadow: 0 15px 10px rgba(0, 0, 0, 0.18);
 }
 
 .hero-text h1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .roles {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.875rem;
-    color: white;
-    margin-bottom: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.875rem;
+  color: white;
+  margin-bottom: 1.5rem;
 }
 
 .socials {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .socials img {
-    width: clamp(36px, 4vw, 50px);
-    height: auto;
-    transition: transform .2s ease;
+  width: clamp(36px, 4vw, 50px);
+  height: auto;
+  transition: transform 0.2s ease;
 }
 
 .socials img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .hero-image {
-    margin-right: -1.25rem;
-    margin-bottom: 1.875rem;
-    z-index: 1;
+  margin-right: -1.25rem;
+  margin-bottom: 1.875rem;
+  z-index: 1;
 }
 
 .hero-image img {
-    width: auto;
-    height: clamp(300px, 60vh, 600px);
-    display: block;
+  width: auto;
+  height: clamp(300px, 60vh, 600px);
+  display: block;
 }
 
 .menu {
-    position: relative;
-    background-color: #bbdaf9;
+  position: relative;
+  background-color: #bbdaf9;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    padding: 4vh 4vw 10vh;
-    overflow: hidden;
+  padding: 4vh 4vw 10vh;
+  overflow: hidden;
 }
 
 .blue-separator-2 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: clamp(50px, 8vh, 70px);
-    background-color: #013678;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: clamp(50px, 8vh, 70px);
+  background-color: #013678;
 }
 
 .blue-separator-2 p {
-    font-family: "Nunito", sans-serif;
-    color: rgba(255,255,255,.75);
-    margin: 1.25rem 0 3rem;
-    text-align: center;
-    font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 1.25rem 0 3rem;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .menu-card {
-    width: 1000px;
-    height: 600px;
-    background: #f2f2f2;
-    border-radius: 25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
-    overflow: hidden;
+  width: 1000px;
+  height: 600px;
+  background: #f2f2f2;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    z-index: 1;
+  z-index: 1;
 }
 
 .menu-card-header {
-    width: 100%;
-    height: 60px;
-    flex-shrink: 0;
-    background: #5989D4;
+  width: 100%;
+  height: 60px;
+  flex-shrink: 0;
+  background: #5989d4;
 }
 
 .menu-card-body {
-    flex: 1;
+  flex: 1;
 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .menu-choices {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .menu-choices img {
-    width: 300px;
-    height: auto;
-    display: block;
-    margin-bottom: -20px;
-    transition: transform .2s ease;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-bottom: -20px;
+  transition: transform 0.2s ease;
 }
 
 .menu-choices img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .menu-choices p {
-    margin: 0;                                                 
-    font-family: "Fredoka", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    color: #013270;
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #013270;
 }
 
 .popup-window {
-    position: fixed;     
-    top: 50%;                    
-    left: 50%;                    
-    transform: translate(-50%, -50%); 
-    
-    background: #f2f2f2; 
-    border-radius: 25px; 
-    box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
-    overflow: hidden; /* cleans the rounded corners */
-    
-    display: none; /* let JavaScript handle turning this to flex on click */
-    flex-direction: column; /* stacks header above the body layout */
-    touch-action: none;  
-    z-index: 9999;       
-    cursor: move;        
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #f2f2f2;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+
+  display: none;
+  flex-direction: column;
+  touch-action: none;
+  z-index: 9999;
+  cursor: move;
 }
 
 .popup-body::-webkit-scrollbar {
@@ -211,240 +211,301 @@ body {
 }
 
 .popup-body::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
   border-radius: 4px;
 }
- 
+
 .popup-body::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 4px;
 }
 
 .popup-body::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .popup-drag-handle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
 }
 
 .popup-title {
-    font-family: "Fredoka", sans-serif;
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .popup-close-btn {
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: "Fredoka", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: color 0.2s ease;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 .popup-close-btn:hover {
-    color: white;
+  color: white;
 }
 
 .popup-body {
-    flex: 1;           
-    overflow-y: auto;  
-    overflow-x: hidden; 
-    
-    display: flex;
-    flex-direction: column; 
-    gap: 25px; 
-    padding: 25px;
-    font-family: "Nunito", sans-serif;
-    color: #013270;
-    cursor: auto; 
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  font-family: "Nunito", sans-serif;
+  color: #013270;
+  cursor: auto;
 }
 
 .profile-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
 }
 
 .popup-divider {
-    border: none;
-    border-top: 2px solid #b0b0b0; 
-    width: 100%;
+  border: none;
+  border-top: 2px solid #b0b0b0;
+  width: 100%;
+  margin: 25px 0; 
 }
 
 #portpic {
-    width: 200px;     
-    height: auto;         
-    border-radius: 50%;   
-    object-fit: cover;    
-    display: inline-block; 
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
 }
 
 .about-text-container {
-    display: flex;
-    font-size: 20px;
-    flex-direction: column;
-    gap: 10px; 
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .about-text-container h1 {
-    font-family: "Fredoka", sans-serif;
-    font-size: 35px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 35px;
 }
 
 .highlight-blue {
-    font-weight: 1000;      
-    color: #0057C4;        
+  font-weight: 1000;
+  color: #0057c4;
 }
 
 .education-text-container h1 {
-    font-family: "Fredoka", sans-serif;
-    margin-bottom: 15px; /* controls where the strand name goes (up or down) */
-    font-size: 35px;
+  font-family: "Fredoka", sans-serif;
+  margin-bottom: 15px;
+  font-size: 35px;
 
-    /*bar accent*/
-    border-left: 5px solid #0057C4; 
-    padding-left: 20px;
+  border-left: 5px solid #0057c4;
+  padding-left: 20px;
 }
 
 .education-text-container h2 {
-    font-family: "Fredoka", sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 .education-text-container p {
-    margin-top: 0;
-    padding-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
-/*makes it so that the school name and the year behaves like inline elements.*/
+
 .education-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    margin-top: 20px;                    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .education-row h2,
 .education-row .education-year {
-    margin: 0;
-    padding: 0;
-    font-weight: 1000;
+  margin: 0;
+  padding: 0;
+  font-weight: 1000;
 }
 
 .education-row .education-year {
-    color: #888888;
+  color: #888888;
 }
 
-/*org info*/
-
 .organization-text-container h1 {
-    font-family: "Fredoka", sans-serif;
-    margin-bottom: 15px; /* controls where the strand name goes (up or down) */
-    font-size: 35px;
-    
-    /*bar accent*/
-    border-left: 5px solid #0057C4; 
-    padding-left: 20px;
+  font-family: "Fredoka", sans-serif;
+  margin-bottom: 15px;
+  font-size: 35px;
+
+  border-left: 5px solid #0057c4;
+  padding-left: 20px;
 }
 
 .org-group {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;            
-    margin-bottom: 25px; /* creates a big gap between BITS and TBH */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 25px;
 }
 
 .organization-text-container h2 {
-    font-family: "Fredoka", sans-serif;
-    margin-top: 0; 
+  font-family: "Fredoka", sans-serif;
+  margin-top: 0;
 }
 
 .organization-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    margin-top: 0; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 0;
 }
 
 .highlight-gray {
-    font-weight: 1000;      
-    color: #888888;        
+  font-weight: 1000;
+  color: #888888;
 }
 
 #current-pos {
-    font-weight: 600;
-    color: #0057C4;
+  font-weight: 600;
+  color: #0057c4;
 }
 
-/* Container that splits Tools and Development side-by-side */
 .skills-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-    width: 100%;
-    margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-/* Individual Columns */
 .skills-column {
-    flex: 1; /* Makes both columns take up equal horizontal space */
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .skills-column h2 {
-    font-family: "Fredoka", sans-serif;
-    font-size: 42px;
-    color: #013270;
-    font-weight: 1000;
-    letter-spacing: 1px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 42px;
+  color: #013270;
+  font-weight: 1000;
+  letter-spacing: 1px;
 }
 
-/* The layout container handling the pill wrapping */
 .tags-grid {
-    display: flex;
-    flex-wrap: wrap; /* This lets tags drop to the next line smoothly */
-    gap: 10px;       /* Spacing between individual pill tags */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-/* The Blue Pill Design */
 .skill-tag {
-    font-family: "Nunito", sans-serif;
-    font-size: 14px;
-    color: white;
-    background-color: #0057C4; 
-    padding: 8px 16px;
-    border-radius: 8px;        
-    border: 2px solid #9D9FFF; 
-    display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: white;
+  background-color: #0057c4;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid #9d9fff;
+  display: inline-block;
 }
 
 .coding-projects {
-    font-family: "Fredoka", sans-serif;
-    font-size: 28px;
-    color: #013270;
-    font-weight: 1000;
-    letter-spacing: 1px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 28px;
+  color: #013270;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  
 }
 
-.coding-projects img {
-    border-radius: 8px;
-    width: 300px;
-    height: auto;
-    display: block;
-    margin-bottom: -20px;
-    transition: transform .2s ease;
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 35px;
+  width: 100%;
+  margin-top: 20px;
+
+  border-left: 5px solid #0057c4;
+  padding-left: 20px;
+}
+
+.project-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 340px;
+  width: 100%;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column; 
+  gap: 16px; 
+  flex: 1;
+}
+
+.project-info h3 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 34px;
+  color: #004aad;
+  font-weight: 1000;
+  letter-spacing: 1px;
+}
+
+.project-info p,
+.project-desc,
+.project-tech {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #013270;
+}
+
+.project-logo {
+  max-width: 340px;
+  width: 100%; 
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+.project-github {
+  align-self: flex-start; 
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: white;
+  background-color: #0057c4;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  
+  border: 2px solid #9d9fff;
+}
+
+#github-disclaimer {
+  font-family: "Nunito", sans-serif;
+  font-weight: 1000;
+  font-size: 10px;
+  color: #888888;
+  text-align: center;
 }

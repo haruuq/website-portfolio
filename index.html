@@ -1,211 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jess' Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico.png" type="image/x-icon" sizes="32x32">
-</head>
-<body>
-<!--hero header-->
-<section class="hero">
-    <div class="hero-text">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="images/favicon.ico.png"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-text">
         <p class="subtitle">Illustration by me!</p>
 
         <h2>Hi there,</h2>
         <h1>I'm Jess!</h1>
 
-        <p class="roles">
-            Graphic Design • Illustration • Web Development 
-        </p>
+        <p class="roles">Graphic Design • Illustration • Web Development</p>
 
         <div class="socials">
-            <a href="https://github.com/haruuq" target="_blank">
-                <img src="images/github-white-icon.png" alt="GitHub">
-            </a>
+          <a href="https://github.com/haruuq" target="_blank">
+            <img src="images/github-white-icon.png" alt="GitHub" />
+          </a>
 
-            <a href="https://www.linkedin.com/in/jessyca-dl-cruz/" target="_blank">
-                <img src="images/linkedin-app-white-icon.png" alt="LinkedIn">
-            </a>
+          <a
+            href="https://www.linkedin.com/in/jessyca-dl-cruz/"
+            target="_blank"
+          >
+            <img src="images/linkedin-app-white-icon.png" alt="LinkedIn" />
+          </a>
         </div>
-    </div>
+      </div>
 
-    <div class="hero-image">
-        <img src="images/transparent.png" alt="Illustration of Jess">
-    </div>
+      <div class="hero-image">
+        <img src="images/transparent.png" alt="Illustration of Jess" />
+      </div>
 
-    <div class="blue-separator"></div>
-</section>
+      <div class="blue-separator"></div>
+    </section>
 
-<!--menu card template-->
-<section class="menu">
-    <div class="menu-card">
-        <div class="menu-card-header"></div> 
+    <section class="menu">
+      <div class="menu-card">
+        <div class="menu-card-header"></div>
 
         <div class="menu-card-body">
-            <div class="menu-choices" id="about-btn" style="cursor: pointer;">
-                <img src="images/info.png" alt="Info Logo">
-                <p>about</p>
-            </div>
+          <div class="menu-choices" id="about-btn" style="cursor: pointer">
+            <img src="images/info.png" alt="Info Logo" />
+            <p>about</p>
+          </div>
 
-            <div class="menu-choices" id="work-btn" style="cursor: pointer;">
-                <img src="images/work.png" alt="Work Logo">
-                <p>work</p>
-            </div>
+          <div class="menu-choices" id="work-btn" style="cursor: pointer">
+            <img src="images/work.png" alt="Work Logo" />
+            <p>work</p>
+          </div>
 
-            <div class="menu-choices" id="cert-btn" style="cursor: pointer;">
-                <img src="images/cert.png" alt="Certification Logo">
-                <p>certifications</p>
-            </div>
+          <div class="menu-choices" id="cert-btn" style="cursor: pointer">
+            <img src="images/cert.png" alt="Certification Logo" />
+            <p>certifications</p>
+          </div>
         </div>
 
         <div class="blue-separator-2">
-            <p>© 2026 Jessyca Cruz</p>          
+          <p>© 2026 Jessyca Cruz</p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!--menu button pop-up window-->
-
-<div id="about-popup" class="popup-window" style="display: none;">
-    <div class="menu-card-header popup-drag-handle">
+    <div id="about-popup" class="popup-window" style="display: none">
+      <div class="menu-card-header popup-drag-handle">
         <span class="popup-title">about</span>
         <button class="popup-close-btn">[x]</button>
-    </div>
+      </div>
 
-   <div class="popup-body">
-    <div class="profile-header">
-        <img id="portpic" src="images/1770118929933.jpg" alt="Picture of me!">
-        
-        <div class="about-text-container">
+      <div class="popup-body">
+        <div class="profile-header">
+          <img
+            id="portpic"
+            src="images/1770118929933.jpg"
+            alt="Picture of me!"
+          />
+
+          <div class="about-text-container">
             <h1>Jessyca Cruz</h1>
-            <p>I'm a third-year <span class="highlight-blue">Information Technology</span> student 
-                with an interest in <span class="highlight-blue">web development</span> and 
-                <span class="highlight-blue">UI/UX design</span>. I enjoy turning ideas into 
-                interactive websites while continuously improving my programming skills!
+            <p>
+              I'm a third-year
+              <span class="highlight-blue">Information Technology</span> student
+              with an interest in
+              <span class="highlight-blue">web development</span> and
+              <span class="highlight-blue">UI/UX design</span>. I enjoy turning
+              ideas into interactive websites while continuously improving my
+              programming skills!
             </p>
+          </div>
         </div>
-    </div> 
 
-<hr class="popup-divider">
+        <hr class="popup-divider" />
 
         <div class="education-text-container">
-            <h1>Education</h1>
-            
-            <div class="education-row">
-                <h2>San Beda College Alabang</h2>
-                <p class="education-year">2022 - 2024</p>
-            </div>
-            <p>Science, Technology, Engineering, and <br> Mathematics <span class="highlight-blue">(STEM)</span> Strand</p>
-            
-            <div class="education-row">
-                <h2>San Beda College Alabang</h2>
-                <p class="education-year">2024 - 2028</p>
-            </div>
-            <p>Bachelor of Science in Information Technology<br><span class="highlight-blue">(Dean’s List, Dean’s Annual Honoree)</span></p>
+          <h1>Education</h1>
+
+          <div class="education-row">
+            <h2>San Beda College Alabang</h2>
+            <p class="education-year">2022 - 2024</p>
+          </div>
+          <p>
+            Science, Technology, Engineering, and <br />
+            Mathematics <span class="highlight-blue">(STEM)</span> Strand
+          </p>
+
+          <div class="education-row">
+            <h2>San Beda College Alabang</h2>
+            <p class="education-year">2024 - 2028</p>
+          </div>
+          <p>
+            Bachelor of Science in Information Technology<br /><span
+              class="highlight-blue"
+              >(Dean’s List, Dean’s Annual Honoree)</span
+            >
+          </p>
         </div>
 
-        <hr class="popup-divider">
+        <hr class="popup-divider" />
 
         <div class="organization-text-container">
-        <h1>Organizations</h1>
-        
-        <div class="org-group">
+          <h1>Organizations</h1>
+
+          <div class="org-group">
             <div class="organization-row">
-                <h2>The Bedan Information Technology Society (BITS)</h2>
+              <h2>The Bedan Information Technology Society (BITS)</h2>
             </div>
             <p>• Associate IVP <span class="highlight-gray">(2024)</span></p>
             <p>• P.R.O <span class="highlight-gray">(2025)</span></p>
-            <p id="current-pos">• Internal Vice-President <span class="highlight-gray">(2026)</span></p>
-        </div>
-        
-        <div class="org-group">
-            <div class="organization-row">
-                <h2>The Bedan Herald (TBH)</h2>
-            </div>
-            <p>• Research & Circulations <span class="highlight-gray">(2024)</span></p>
-            <p>• Junior Editorial Staff <span class="highlight-gray">(2025)</span></p>
-        </div>
-        <hr class="popup-divider">
-    </div>
-    
-            
+            <p id="current-pos">
+              • Internal Vice-President
+              <span class="highlight-gray">(2026)</span>
+            </p>
+          </div>
 
-    </div> </div> <div id="work-popup" class="popup-window" style="display: none;">
-    <div class="menu-card-header popup-drag-handle">
+          <div class="org-group">
+            <div class="organization-row">
+              <h2>The Bedan Herald (TBH)</h2>
+            </div>
+            <p>
+              • Research & Circulations
+              <span class="highlight-gray">(2024)</span>
+            </p>
+            <p>
+              • Junior Editorial Staff
+              <span class="highlight-gray">(2025)</span>
+            </p>
+          </div>
+          <hr class="popup-divider" />
+        </div>
+      </div>
+    </div>
+
+    <div id="work-popup" class="popup-window" style="display: none">
+      <div class="menu-card-header popup-drag-handle">
         <span class="popup-title">work</span>
         <button class="popup-close-btn">[x]</button>
-    </div>
+      </div>
 
-   <div class="popup-body">
-    <div class="skills-container">
-        
-        <div class="skills-column">
+      <div class="popup-body">
+        <div class="skills-container">
+          <div class="skills-column">
             <h2>TOOLS</h2>
             <div class="tags-grid">
-                <span class="skill-tag">Adobe Photoshop</span>
-                <span class="skill-tag">Adobe InDesign</span>
-                <span class="skill-tag">Clip Studio Paint</span>
-                <span class="skill-tag">Canva</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">Visual Studio</span>
-                <span class="skill-tag">Visual Studio Code</span>
-                <span class="skill-tag">Apache NetBeans</span>
-                <span class="skill-tag">Microsoft SSMS</span>
-                <span class="skill-tag">Oracle VirtualBox</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">Adobe InDesign</span>
+              <span class="skill-tag">Clip Studio Paint</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Visual Studio</span>
+              <span class="skill-tag">Visual Studio Code</span>
+              <span class="skill-tag">Apache NetBeans</span>
+              <span class="skill-tag">Microsoft SSMS</span>
+              <span class="skill-tag">Oracle VirtualBox</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
             </div>
-        </div>
+          </div>
 
-        <div class="skills-column">
+          <div class="skills-column">
             <h2>DEVELOPMENT</h2>
             <div class="tags-grid">
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">HTML / CSS</span>
-                <span class="skill-tag">Kotlin</span>
-                <span class="skill-tag">C#</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">PHP</span>
-                <span class="skill-tag">Interact.js</span>
-                <span class="skill-tag">Howler.js</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">Kotlin</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Interact.js</span>
+              <span class="skill-tag">Howler.js</span>
             </div>
+          </div>
         </div>
 
-    </div>
+        <hr class="popup-divider" />
 
-    <hr class="popup-divider">
+        <div class="coding-projects">
+          <h2>CODING PROJECTS</h2>
 
-    <div class="coding-projects">
-        <div class="eco-track">
-       <h2>CODING PROJECTS</h2>
-        <img src="images/ecotrack.webp" alt="EcoTrack Logo">
+          <div class="project-card">
+            <div class="project-left">
+              <img
+                src="images/ecotrack.webp"
+                alt="EcoTrack Logo"
+                class="project-logo"
+              />
+              <a
+                href="https://github.com/haruuq/SDGEcoTracker"
+                target="_blank"
+                class="project-github"
+                >Check it out on Github!</a
+              >
+            </div>
+
+            <div class="project-info">
+              <h3>EcoTrack</h3>
+              <p class="project-desc">
+                Co-developed an Android application for a final exam.
+              </p>
+              <p class="project-tech">
+                EcoTrack utilizes Android Widgets, Intents, and SQLite,
+                implementing full CRUD functionality for local data management.
+              </p>
+            </div>
+          </div>
+
+          <hr class="popup-divider" />
+
+          <div class="project-card">
+            <div class="project-left">
+              <img
+                src="images/lib-system.webp"
+                alt="Library System Logo"
+                class="project-logo"
+              />
+              <a
+                href="https://github.com/haruuq/LibrarySystem"
+                target="_blank"
+                class="project-github"
+                >Check it out on Github!</a
+              >
+            </div>
+
+            <div class="project-info">
+              <h3>SBCA Library System</h3>
+              <p class="project-desc"> 
+                Designed and developed a Library Management System with Visual Studio and SQL Server.
+              </p>
+              <p class="project-tech">
+                It implements book tracking, user management, and transaction logging through a relational database.
+              </p>
+            </div>
+          </div>
+
+          <hr class="popup-divider" />
+          <p id="github-disclaimer">Please explore my GitHub to discover more projects and see what I've been working on :]</p>
+          <hr class="popup-divider" />
         </div>
-    </div>
-    
+      </div>
     </div>
 
-</div>
-
-<div id="cert-popup" class="popup-window" style="display: none;">
-    <div class="menu-card-header popup-drag-handle">
+    <div id="cert-popup" class="popup-window" style="display: none">
+      <div class="menu-card-header popup-drag-handle">
         <span class="popup-title">certifications</span>
         <button class="popup-close-btn">[x]</button>
+      </div>
+
+      <div class="popup-body">
+        <p>TBA</p>
+      </div>
     </div>
 
-    <div class="popup-body">
-            <p>TBA</p>
-    </div>
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
-<script src="script.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
