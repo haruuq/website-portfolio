@@ -106,7 +106,7 @@ function openLightbox(imageSrc, descriptionText) {
   if (modal && modalImg) {
     modalImg.src = imageSrc;
     modal.style.display = "flex";
-    
+
     const modalDesc = document.getElementById("lightboxDesc");
     if (modalDesc && descriptionText) {
       modalDesc.textContent = descriptionText;
