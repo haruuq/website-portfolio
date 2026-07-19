@@ -65,7 +65,7 @@ function setupPopup(buttonId, popupId, width, height) {
 // map buttons to respective popups safely, also sizes to control their dimensions individually
 setupPopup("about-btn", "about-popup", "700px", "500px");
 setupPopup("work-btn", "work-popup", "1000px", "600px");
-setupPopup("cert-btn", "cert-popup", "400px", "300px");
+setupPopup("cert-btn", "cert-popup", "700px", "500px");
 
 menuButtons.forEach((button) => {
   button.addEventListener("click", () => menuClickSound.play());
@@ -93,35 +93,34 @@ interact(".popup-window").draggable({
 });
 
 // allows you to inspect full size and resolution of the image.
-function openLightbox(imageSrc) {
-  const modal = document.getElementById("lightboxModal");
-  const modalImg = document.getElementById("lightboxImg");
-
-  modalImg.src = imageSrc;
-  modal.style.display = "flex";
-}
-
-function closeLightbox() {
-  document.getElementById("lightboxModal").style.display = "none";
-}
-
 function openLightbox(imageSrc, descriptionText) {
   if (typeof imageClickSound !== "undefined") {
     imageClickSound.play();
-  } else {
+  } else if (typeof menuClickSound !== "undefined") {
     menuClickSound.play();
   }
 
   const modal = document.getElementById("lightboxModal");
   const modalImg = document.getElementById("lightboxImg");
 
-  modalImg.src = imageSrc;
-  modal.style.display = "flex";
+  if (modal && modalImg) {
+    modalImg.src = imageSrc;
+    modal.style.display = "flex";
+    
+    const modalDesc = document.getElementById("lightboxDesc");
+    if (modalDesc && descriptionText) {
+      modalDesc.textContent = descriptionText;
+    }
+  }
 }
 
 function closeLightbox() {
-  // plays the close sound
-  closeClickSound.play();
+  if (typeof closeClickSound !== "undefined") {
+    closeClickSound.play();
+  }
 
-  document.getElementById("lightboxModal").style.display = "none";
+  const modal = document.getElementById("lightboxModal");
+  if (modal) {
+    modal.style.display = "none";
+  }
 }
